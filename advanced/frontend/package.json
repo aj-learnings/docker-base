@@ -1,0 +1,17 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "start": "serve -s public",
+    "build": "npx esbuild src/index.js --bundle --outfile=public/bundle.js --loader:.js=jsx"
+  },
+  "devDependencies": {
+    "esbuild": "^0.19.2",
+    "serve": "^14.2.0"
+  }
+}

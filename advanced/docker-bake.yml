@@ -1,0 +1,16 @@
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: myapp/frontend:latest
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    image: myapp/backend:latest
+  database:
+    build:
+      context: ./database
+      dockerfile: Dockerfile
+    image: myapp/database:latest
